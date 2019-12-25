@@ -1,0 +1,14 @@
+Begin
+    Input A,B,C
+    If(A>B)
+        If(A>C)
+            Display A lon nhat
+        Else
+            Display C lon nhat
+        endif
+    Else
+        If(B>C)
+            Display B lon nhat
+        Else
+            Display C lon nhat
+end
