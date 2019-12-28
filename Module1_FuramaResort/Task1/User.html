@@ -74,7 +74,6 @@
             let numberOfDay = document.getElementById("numberOfDay");
             let typeOfService = document.getElementById("typeOfService");
             let roomTypeRented = document.getElementById("roomTypeRented");
-            let money;
 
             document.write("Khach hang: " +nameuser.value );
             document.write("CMND "+CMND.value);
@@ -87,17 +86,27 @@
             document.write("So luong ngay thue: "+numberOfDay.value);
             document.write("Loai dich vu "+typeOfService.value);
             document.write("Loai dich vu "+roomTypeRented.value);
-
-            if(typeOfService.value === "Villa"){
-               money.value = 500*parseInt(numberOfDay.value) * (1 - parseInt(discount.value)/100);
-                document.write(" ket qua tinh tien " + money.value);
-            }else if(typeOfService === "House"){
-                money.value = 300*parseInt(numberOfDay.value) *(1-parseInt(discount.value)/100);
-                document.write(" ket qua tinh tien " + money.value);
+            //document.write("Xin chao1");
+            if(typeOfService.value == "Villa"){
+                money = parseInt(numberOfDay.value)*500*(1-parseInt(discount.value)/100);
+                document.write('Ket qua' + parseInt(money));
+            }else if(typeOfService.value == "House"){
+                money = parseInt(numberOfDay.value)*300*(1-parseInt(discount.value)/100);
+                document.write('Ket qua '+ parseInt(money));
             }else {
-                money.value = 100*parseInt(numberOfDay.value) *(1-parseInt(discount.value)/100);
-                document.write(" ket qua tinh tien " + money.value);
+                money = parseInt(numberOfDay.value)*100*(1-parseInt(discount.value)/100);
             }
+            // if(typeOfService.value === "Villa"){
+            //    money.value = 500*parseInt(numberOfDay) * (1 - parseInt(discount)/100);
+            //     document.write(" ket qua tinh tien " + money.value);
+            // }else if(typeOfService.value === "House"){
+            //     money.value = 300*parseInt(numberOfDay) *(1-parseInt(discount)/100);
+            //     document.write(" ket qua tinh tien " + money.value);
+            // }else {
+            //     money.value = 100*parseInt(numberOfDay) *(1-parseInt(discount.value)/100);
+            //     document.write(" ket qua tinh tien " + money.value);
+            // }
+            // document.write("Xin chao2");
         }
     </script>
 </body>
