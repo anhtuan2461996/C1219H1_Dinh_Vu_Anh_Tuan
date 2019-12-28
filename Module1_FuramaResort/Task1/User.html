@@ -76,21 +76,28 @@
             let roomTypeRented = document.getElementById("roomTypeRented");
             let money;
 
-            document.write("Khach hang: \n" +nameuser.value);
-            document.write("CMND \n"+CMND.value);
-            document.write("Ngay Sinh \n"+dateOfBirth.value);
-            document.write("Gmail \n"+Email.value);
-            document.write("Dia Chi \n"+address.value);
-            document.write("Loai khach hang \n"+customType.value);
-            document.write("Giam gia \n"+discount.value);
-            document.write("So luong nguoi \n"+amount.value);
-            document.write("So luong ngay thue: \n"+numberOfDay.value);
-            document.write("Loai dich vu \n"+typeOfService.value);
-            document.write("Loai dich vu \n"+roomTypeRented.value);
-            // if(typeOfService.value === "Villa"){
-            //    money = 500*parseInt(numberOfDay).value *(1-parseInt(discount).value/100);
-            //    document.write(" ket qua tinh tien " +parseInt(money));
-            // }
+            document.write("Khach hang: " +nameuser.value );
+            document.write("CMND "+CMND.value);
+            document.write("Ngay Sinh "+dateOfBirth.value);
+            document.write("Gmail "+Email.value);
+            document.write("Dia Chi "+address.value);
+            document.write("Loai khach hang "+customType.value);
+            document.write("Giam gia "+discount.value);
+            document.write("So luong nguoi "+amount.value);
+            document.write("So luong ngay thue: "+numberOfDay.value);
+            document.write("Loai dich vu "+typeOfService.value);
+            document.write("Loai dich vu "+roomTypeRented.value);
+
+            if(typeOfService.value === "Villa"){
+               money.value = 500*parseInt(numberOfDay.value) * (1 - parseInt(discount.value)/100);
+                document.write(" ket qua tinh tien " + money.value);
+            }else if(typeOfService === "House"){
+                money.value = 300*parseInt(numberOfDay.value) *(1-parseInt(discount.value)/100);
+                document.write(" ket qua tinh tien " + money.value);
+            }else {
+                money.value = 100*parseInt(numberOfDay.value) *(1-parseInt(discount.value)/100);
+                document.write(" ket qua tinh tien " + money.value);
+            }
         }
     </script>
 </body>
