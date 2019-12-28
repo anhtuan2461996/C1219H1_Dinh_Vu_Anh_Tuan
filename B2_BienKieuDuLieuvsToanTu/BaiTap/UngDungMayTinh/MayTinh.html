@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td> <input type="text" id="aa"></td>
+            <td> <input type="text" id="bb"> </td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="ham('+')" id="add">+</button>
+                <button type="button" onclick="ham('-')" id="sub">-</button>
+                <button type="button" onclick="ham('*')" id="mul">*</button>
+                <button type="button" onclick="ham('/')" id="div">/</button>
+            </td>
+
+        </tr>
+    </table>
+    <p id="printf"></p>
+    <script>
+        function ham(i) {
+            let a = document.getElementById("aa");
+            let b = document.getElementById("bb");
+            let add = document.getElementById("add").value;
+            let sub = document.getElementById("sub").value;
+            let mul = document.getElementById("mul").value;
+            let div = document.getElementById("div").value;
+
+            if(i == '+'){
+                let tong = parseInt(a.value) + parseInt(b.value);
+                alert("ket qua cua phep cong la: " + tong);
+            }
+             if(i == '-' ){
+                let tru = parseInt(a.value) - parseInt(b.value);
+                alert("Ket qua cua phep tru la: " + tru);
+            }
+            if (i == '*' ){
+                let nhan = parseInt(a.value) * parseInt(b.value);
+                alert("Ket qua cua phep nhan la: " + nhan);
+            }
+            if (i == '/'){
+                if(b.value === '0'){
+                    alert("Ban da nhap sai")
+                }else {
+                    let chia = parseInt(a.value)/parseInt(b.value);
+                    alert("Ket qua cua phep chia la: " +chia)
+                }
+            }
+
+        }
+        //document.write("hien thi");
+    </script>
+</body>
+</html>
