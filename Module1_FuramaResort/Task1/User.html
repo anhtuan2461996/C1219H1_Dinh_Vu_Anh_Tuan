@@ -17,8 +17,8 @@
         <tr>
             <td><input type="text" id = "nameUser"></td>
             <td><input type="text" id ="CMND"></td>
-            <td><input type="text" id ="dateOfBirth"></td>
-            <td><input type="text" id ="email"></td>
+            <td><input type="date" id ="dateOfBirth"></td>
+            <td><input type="email" id ="email"></td>
             <td><input type="text" id ="address"> </td>
         </tr>
         <br>
@@ -74,39 +74,26 @@
             let numberOfDay = document.getElementById("numberOfDay");
             let typeOfService = document.getElementById("typeOfService");
             let roomTypeRented = document.getElementById("roomTypeRented");
-
             document.write("Khach hang: " +nameuser.value );
-            document.write("CMND "+CMND.value);
-            document.write("Ngay Sinh "+dateOfBirth.value);
-            document.write("Gmail "+Email.value);
-            document.write("Dia Chi "+address.value);
-            document.write("Loai khach hang "+customType.value);
-            document.write("Giam gia "+discount.value);
-            document.write("So luong nguoi "+amount.value);
-            document.write("So luong ngay thue: "+numberOfDay.value);
-            document.write("Loai dich vu "+typeOfService.value);
-            document.write("Loai dich vu "+roomTypeRented.value);
+            document.writeln("CMND "+CMND.value);
+            document.writeln("Ngay Sinh "+dateOfBirth.value);
+            document.writeln("Gmail "+Email.value);
+            document.writeln("Dia Chi "+address.value);
+            document.writeln("Loai khach hang "+customType.value);
+            document.writeln("Giam gia "+discount.value);
+            document.writeln("So luong nguoi "+amount.value);
+            document.writeln("So luong ngay thue: "+numberOfDay.value);
+            document.writeln("Loai dich vu "+typeOfService.value);
+            document.writeln("Loai dich vu "+roomTypeRented.value);
             //document.write("Xin chao1");
             if(typeOfService.value == "Villa"){
                 money = parseInt(numberOfDay.value)*500*(1-parseInt(discount.value)/100);
-                document.write('Ket qua' + parseInt(money));
             }else if(typeOfService.value == "House"){
                 money = parseInt(numberOfDay.value)*300*(1-parseInt(discount.value)/100);
-                document.write('Ket qua '+ parseInt(money));
             }else {
                 money = parseInt(numberOfDay.value)*100*(1-parseInt(discount.value)/100);
             }
-            // if(typeOfService.value === "Villa"){
-            //    money.value = 500*parseInt(numberOfDay) * (1 - parseInt(discount)/100);
-            //     document.write(" ket qua tinh tien " + money.value);
-            // }else if(typeOfService.value === "House"){
-            //     money.value = 300*parseInt(numberOfDay) *(1-parseInt(discount)/100);
-            //     document.write(" ket qua tinh tien " + money.value);
-            // }else {
-            //     money.value = 100*parseInt(numberOfDay) *(1-parseInt(discount.value)/100);
-            //     document.write(" ket qua tinh tien " + money.value);
-            // }
-            // document.write("Xin chao2");
+            document.write('Ket qua' + parseInt(money));
         }
     </script>
 </body>

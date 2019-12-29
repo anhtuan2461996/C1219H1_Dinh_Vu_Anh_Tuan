@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let year = parseInt(prompt('Nhap Nam: '))
+        aa = year % 4;
+        bb = year % 100;
+        cc = year % 400;
+        if (bb != '0'){
+            if (cc != 0){
+                alert("Ban vua nhap nam nhuan la: " +year);
+            }else {
+                alert("Ban vua nhap khong phai nam nhuan: ");
+            }
+        }else if (aa !=0){
+            alert("Ban vua nhap nam nhuan la: "+year);
+        }
+    </script>
+</body>
+</html>
