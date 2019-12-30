@@ -6,8 +6,7 @@
 </head>
 <body>
     <form>
-        <<img src="../CauTrucSwitch_Case/DiemTrungBinh.PNG" height="366"
-                                                    width="249"/>
+        <img id="myImage" src="DiemTrungBinh.PNG" height="366" width="249"/>
         <p>Click button below to move the  image to right</p>
         <input type="button" onclick="moveRight();" value="Click me">
     </form>
@@ -17,7 +16,7 @@
         window.onload = init;
         function init() {
             imgObj = document.getElementById('myImage');
-            imgObj.style.position = 'relation';
+            imgObj.style.position = 'relative';
             imgObj.style.left = '0px';
         }
         function moveRight() {

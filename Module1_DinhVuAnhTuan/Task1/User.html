@@ -16,10 +16,10 @@
         </tr>
         <tr>
             <td><input type="text" id = "nameUser"></td>
-            <td><input type="text" id ="CMND"></td>
-            <td><input type="date" id ="dateOfBirth"></td>
-            <td><input type="email" id ="email"></td>
-            <td><input type="text" id ="address"> </td>
+            <td><input type="text" id ="idCard"></td>
+            <td><input type="date" id ="dateBirth"></td>
+            <td><input type="email" id ="emailCustomer"></td>
+            <td><input type="text" id ="addressCustomer"> </td>
         </tr>
         <br>
         <tr>
@@ -31,7 +31,7 @@
             <th> Room Type Rented </th>
         </tr>
         <tr>
-            <td><select name="CustomerType" id ='customerType'>
+            <td><select name="CustomerType" id ='TypeCustomer'>
                 <option value="Diamond">Diamond</option>
                 <option value="Plantinum">Plantinum</option>
                 <option value="Gold">Gold</option>
@@ -41,13 +41,13 @@
             </td>
             <td><input type="text" id="discount"></td>
             <td><input type="text" id="amount"></td>
-            <td><input type="text" id="numberOfDay"></td>
-            <td><select name ="Type of Service" id="typeOfService">
+            <td><input type="text" id="rentDay"></td>
+            <td><select name ="Type of Service" id="typeService">
                 <option value="Villa">Villa</option>
                 <option value="House">House</option>
                 <option value="Room">Room</option>
             </select></td>
-            <td><select name ="RoomTypeRented" id="roomTypeRented">
+            <td><select name ="TydeRoom" id="TydeRoom">
                 <option value="Vip">Vip</option>
                 <option value="Business">Business</option>
                 <option value="Normal">Normal</option>
@@ -64,27 +64,27 @@
     <script>
         function show() {
             let nameuser = document.getElementById("nameUser");
-            let CMND = document.getElementById("CMND");
-            let dateOfBirth = document.getElementById("dateOfBirth");
-            let Email = document.getElementById("email");
-            let address = document.getElementById("address");
-            let customType = document.getElementById("customerType");
+            let idCard = document.getElementById("idCard");
+            let dateBirth = document.getElementById("dateBirth");
+            let emailCustomer = document.getElementById("emailCustomer");
+            let addressCustomer = document.getElementById("addressCustomer");
+            let TypeCustomer = document.getElementById("TypeCustomer");
             let discount = document.getElementById("discount");
             let amount = document.getElementById("amount");
-            let numberOfDay = document.getElementById("numberOfDay");
-            let typeOfService = document.getElementById("typeOfService");
-            let roomTypeRented = document.getElementById("roomTypeRented");
+            let rentDay = document.getElementById("rentDay");
+            let typeService = document.getElementById("typeService");
+            let TydeRoom = document.getElementById("TydeRoom");
             document.write("Khach hang: " +nameuser.value );
-            document.writeln("<br> CMND "+CMND.value);
-            document.writeln("<br>Ngay Sinh "+dateOfBirth.value);
-            document.writeln("<br>Gmail "+Email.value);
-            document.writeln("<br>Dia Chi "+address.value);
-            document.writeln("<br>Loai khach hang "+customType.value);
+            document.writeln("<br> CMND "+idCard.value);
+            document.writeln("<br>Ngay Sinh "+dateBirth.value);
+            document.writeln("<br>Gmail "+ emailCustomer.value);
+            document.writeln("<br>Dia Chi "+addressCustomer.value);
+            document.writeln("<br>Loai khach hang "+TypeCustomer.value);
             document.writeln("<br>Giam gia "+discount.value);
             document.writeln("<br>So luong nguoi "+amount.value);
-            document.writeln("<br>So luong ngay thue: "+numberOfDay.value);
-            document.writeln("<br>Loai dich vu "+typeOfService.value);
-            document.writeln("<br>Loai dich vu "+roomTypeRented.value);
+            document.writeln("<br>So luong ngay thue: "+rentDay.value);
+            document.writeln("<br>Loai dich vu "+typeService.value);
+            document.writeln("<br>Loai phong thue "+TydeRoom.value);
             //document.write("Xin chao1");
             if(typeOfService.value == "Villa"){
                 money = parseInt(numberOfDay.value)*500*(1-parseInt(discount.value)/100);
