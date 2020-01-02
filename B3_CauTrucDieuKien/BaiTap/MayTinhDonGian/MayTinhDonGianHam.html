@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <td><input type="text" id="aa"></td>
+        <tr>
+            <td>
+                <button type="button" id="1" onclick="nhap('1')">1</button>
+                <button type="button" id="2" onclick="nhap('2')">2</button>
+                <button type="button" id="3"onclick="nhap('3')">3</button>
+                <button type="button" id="+"onclick="nhap('+')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="4"onclick="nhap('4')">4</button>
+                <button type="button" id="5"onclick="nhap('5')">5</button>
+                <button type="button" id="6"onclick="nhap('6')">6</button>
+                <button type="button" id="-"onclick="nhap('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="7"onclick="nhap('7')">7</button>
+                <button type="button" id="8"onclick="nhap('8')">8</button>
+                <button type="button" id="9"onclick="nhap('9')">9</button>
+                <button type="button" id="*"onclick="nhap('*')">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="C">C</button>
+                <button type="button" id="0"onclick="nhap('0')">0</button>
+                <button type="button" id="=" onclick="tinhtoan();">=</button>
+                <button type="button" id="/"onclick="nhap('/')">/</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        let str='';
+        function nhap(bb) {
+            let aa = document.getElementById("aa");
+            str +=bb;
+            aa.value=str;
+        }
+        function tinhtoan() {
+            let aa = document.getElementById("aa");
+            aa.value = eval(str);
+        }
+    </script>
+</body>
+</html>

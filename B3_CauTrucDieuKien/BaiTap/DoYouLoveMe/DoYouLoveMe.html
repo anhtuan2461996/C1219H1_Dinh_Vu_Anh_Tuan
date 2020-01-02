@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:position="http://www.w3.org/1999/xhtml" xmlns:left="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><p>DO YOU LOVE ME</p></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="Show();">Yes</button> </td>
+            <td><button type="button" id="no" onmouseout="NoShow(); "style="position: absolute;left: 360px;top: 235px">No</button> </td>
+        </tr>
+    </table>
+    <script>
+        function Show() {
+            alert("Yes. You are right");
+        }
+        function NoShow() {
+            aa= Math.round(Math.random()*window.innerWidth);
+            bb = Math.round(Math.random()*window.innerHeight);
+            document.getElementById("no").style.left =aa +'px';
+            document.getElementById("no").style.top = bb +'px';
+
+        }
+    </script>
+</body>
+</html>
