@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="bien1"></td>
+        <td><input type="text" id="bien2"></td>
+    </tr>
+    <tr>
+        <td><button type="button"onclick="myHome();">click</button> </td>
+    </tr>
+</table>
+<p id="giaTri"></p>
+<script>
+    function myHome(){
+        let bien1 =document.getElementById("bien1");
+        let bien2 =document.getElementById("bien2");
+        let num =20,tem;
+        bien1=parseInt(bien1.value);
+        bien2=parseInt(bien2.value);
+        do {
+            tem=bien1+bien2;
+            bien1 =bien2;
+            bien2 = tem;
+        }while (bien1%5!=0);
+        // for (let i=1;i<=num;i++){
+        //     tem =bien1;
+        //     bien1 += bien2;
+        //     bien2 =tem;
+        //     //document.getElementById("giaTri").innerHTML=parseInt(bien1);
+        //     document.write(bien1+"<br>")
+        // }
+        document.getElementById("giaTri").innerHTML=bien1;
+    }
+</script>
+</body>
+</html>
