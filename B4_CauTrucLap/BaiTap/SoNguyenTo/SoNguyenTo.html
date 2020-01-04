@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input type="text" id="nguyento" ></td>
+            <td><button type="button" id="click" onclick="soNguyenTo();">click</button> </td>
+        </tr>
+    </table>
+    <p id="giaTri"></p>
+    <script>
+        function soNguyenTo() {
+        let nguyenTo = document.getElementById("nguyento");
+        let bien= parseInt(nguyenTo.value);
+            if (bien < 2){
+                document.getElementById("giaTri").innerHTML="So ban vua nhap khong phai so nguyen to";
+            }else if(bien==2){
+                document.getElementById("giaTri").innerHTML="So ban vua nhap la so nguyen to";
+            }
+            else {
+                for (i=3;i<Math.sqrt(bien);i+=2){
+                    if (bien % i == 0){
+                        document.getElementById("giaTri").innerHTML="So ban vua nhap khong la so nguyen to";
+                    }else {
+                        document.getElementById("giaTri").innerHTML="So ban vua nhap la so nguyen to";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

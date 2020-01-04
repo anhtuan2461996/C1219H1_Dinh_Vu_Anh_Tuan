@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p> Thong Tin Khach Hang</p>
+    <table>
+        <tr>
+            <th> Ho va Ten</th>
+            <th> CMND </th>
+            <th> Ngay Thang Nam Sinh</th>
+            <th> Email</th>
+            <th> Address</th>
+        </tr>
+        <tr>
+            <td><input type="text" id = "nameUser"></td>
+            <td><input type="text" id ="idCard"></td>
+            <td><input type="date" id ="dateBirth"></td>
+            <td><input type="email" id ="emailCustomer"></td>
+            <td><input type="text" id ="addressCustomer"> </td>
+        </tr>
+        <br>
+        <tr>
+            <th> Customer Type</th>
+            <th> Discount</th>
+            <th> Amount</th>
+            <th> Number of Days</th>
+            <th> Type of Service</th>
+            <th> Room Type Rented </th>
+        </tr>
+        <tr>
+            <td><select name="TypeCustomer" id ='TypeCustomer'>
+                <option value="Diamond">Diamond</option>
+                <option value="Plantinum">Plantinum</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Member">Member</option>
+            </select>
+            </td>
+            <td><input type="text" id="discount"></td>
+            <td><input type="text" id="amount"></td>
+            <td><input type="text" id="rentDay"></td>
+            <td><select name ="Type of Service" id="typeService">
+                <option value="Villa">Villa</option>
+                <option value="House">House</option>
+                <option value="Room">Room</option>
+            </select></td>
+            <td><select name ="TydeRoom" id="TydeRoom">
+                <option value="Vip">Vip</option>
+                <option value="Business">Business</option>
+                <option value="Normal">Normal</option>
+            </select></td>
+            <td>
+                <button type="button" onclick="chinhSua();">Edit</button>
+            </td>
+        </tr>
+        <tr><th>Bảng Giá</th></tr>
+        <tr><th> Villa 500$/ 1 ngay</th></tr>
+        <tr><th> House 300$/1 ngay</th></tr>
+        <tr><th> Room: 100$/1 ngay</th></tr>
+    </table>
+    <script>
+        let nameuser = document.getElementById("nameUser");
+        let idCard = document.getElementById("idCard");
+        let dateBirth = document.getElementById("dateBirth");
+        let emailCustomer = document.getElementById("emailCustomer");
+        let addressCustomer = document.getElementById("addressCustomer");
+        let TypeCustomer = document.getElementById("TypeCustomer");
+        let discount = document.getElementById("discount");
+        let amount = document.getElementById("amount");
+        let rentDay = document.getElementById("rentDay");
+        let typeService = document.getElementById("typeService");
+        let TydeRoom = document.getElementById("TydeRoom");
+
+         nameuser.value = "Tran Huu Tuan";
+         idCard.value = "205909029";
+         dateBirth.value = "01/09/1996";
+         emailCustomer.value = "dinhvuanhtuan1@gmail.com";
+         addressCustomer.value = "108LeHuuTho";
+         TypeCustomer.value = "Gold";
+         discount.value = 5;
+         amount.value = 2;
+         rentDay.value = 2;
+         typeService.value = "Villa";
+         TydeRoom.value = "Vip";
+    function chinhSua() {
+        let nameuser = document.getElementById("nameUser");
+        let idCard = document.getElementById("idCard");
+        let dateBirth = document.getElementById("dateBirth");
+        let emailCustomer = document.getElementById("emailCustomer");
+        let addressCustomer = document.getElementById("addressCustomer");
+        let TypeCustomer = document.getElementById("TypeCustomer");
+        let discount = document.getElementById("discount");
+        let amount = document.getElementById("amount");
+        let rentDay = document.getElementById("rentDay");
+        let typeService = document.getElementById("typeService");
+        let TydeRoom = document.getElementById("TydeRoom");
+    }
+            //document.write("hello");
+            // document.write("Khach hang: " + nameuser);
+            // document.writeln("<br> CMND " + idCard);
+            // document.writeln("<br>Ngay Sinh " + dateBirth);
+            // document.writeln("<br>Gmail " + emailCustomer);
+            // document.writeln("<br>Dia Chi " + addressCustomer);
+            // document.writeln("<br>Loai khach hang " + TypeCustomer);
+            // document.writeln("<br>Giam gia " + discount);
+            // document.writeln("<br>So luong nguoi " + amount);
+            // document.writeln("<br>So luong ngay thue: " + rentDay);
+            // document.writeln("<br>Loai dich vu " + typeService);
+            // document.writeln("<br>Loai phong thue " + TydeRoom);
+            //document.write("Xin chao1");
+        //     if (typeOfService.value == "Villa") {
+        //         money = parseInt(numberOfDay.value) * 500 * (1 - parseInt(discount.value) / 100);
+        //     } else if (typeOfService.value == "House") {
+        //         money = parseInt(numberOfDay.value) * 300 * (1 - parseInt(discount.value) / 100);
+        //     } else {
+        //         money = parseInt(numberOfDay.value) * 100 * (1 - parseInt(discount.value) / 100);
+        //     }
+        // }
+    </script>
+    <br>
+<!--    <button type="button" id="edit" href =>Sua Thong Tin</button>-->
+</body>
+</html>
