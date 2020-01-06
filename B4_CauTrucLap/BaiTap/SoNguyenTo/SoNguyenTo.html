@@ -5,32 +5,32 @@
     <title>Title</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <td><input type="text" id="nguyento" ></td>
-            <td><button type="button" id="click" onclick="soNguyenTo();">click</button> </td>
-        </tr>
-    </table>
-    <p id="giaTri"></p>
     <script>
-        function soNguyenTo() {
-        let nguyenTo = document.getElementById("nguyento");
-        let bien= parseInt(nguyenTo.value);
-            if (bien < 2){
-                document.getElementById("giaTri").innerHTML="So ban vua nhap khong phai so nguyen to";
-            }else if(bien==2){
-                document.getElementById("giaTri").innerHTML="So ban vua nhap la so nguyen to";
+        let input = parseInt(prompt("nhap so:  "));
+        hienThiSoNguyenTos(input);
+        function hienThiSoNguyenTos(m){
+            let i=2;
+            let count =0;
+            let str =' ';
+
+            while (count<m){
+                if (soNguyenTo(i)){
+                    str +=i + "";
+                    count++;
+                }
+                i++;
             }
-            else {
-                for (i=2;i<=Math.sqrt(bien);i++){
-                    if (bien % i == 0){
-                        document.getElementById("giaTri").innerHTML="So ban vua nhap khong la so nguyen to";
-                    }else {
-                        document.getElementById("giaTri").innerHTML="So ban vua nhap la so nguyen to";
+            document.write(str);
+        }
+        function soNguyenTo(so) {
+                for (i=2;i<so;i++){
+                    if (so %i ===0){
+                        return false;
                     }
                 }
-            }
+                return true;
         }
     </script>
+
 </body>
 </html>
