@@ -2,9 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let checkValueDate = false;
+    let emailCustomer;
+    let birthDayCustomer;
+    let idCard;
+    let discount ;
+    let numberOfAccompanying;
+    let rentDay ;
+    // let nameuser = "Tran Huu Tuan";
+    // let idCard = "205909029";
+    do {
+        checkValueDate= false;
+        rentDay= prompt("Enter Renr Day: ");
+        if (!isNaN(rentDay)){
+            rentDay =Number.parseFloat(rentDay);
+            if (rentDay>0&&Number.isInteger(rentDay)){
+                checkValueDate =true;
+            }
+        }
+    }while (!checkValueDate)
+    do {
+        checkValueDate=false;
+        discount =prompt("Enter Discount: ");
+        if (!isNaN(discount)){
+            discount = Number.parseFloat(discount);
+            if (discount>=0){
+                checkValueDate=true;
+            }
+        }
+    }while (!checkValueDate);
+    do {
+        checkValueDate=false;
+        numberOfAccompanying = prompt("Enter Number Of Accompanying: ")
+        if (!isNaN(numberOfAccompanying)){
+            numberOfAccompanying= Number.parseFloat(numberOfAccompanying);
+            if (numberOfAccompanying>=0&&Number.isInteger(numberOfAccompanying)){
+                checkValueDate=true;
+            }
+        }
+    }while (!checkValueDate);
+    do {
+        checkValueDate= false;
+        idCard = prompt("Enter CMND Customer: ");
+        if (isNaN(idCard)){
+            alert("CMND is invalid. Please Try Again.");
+            continue;
+        }
+        idCard = Number.parseFloat(idCard);
+        if (!Number.isInteger(idCard)){
+            alert("CMND is invalid. Please Try Again.");
+            continue;
+        }
+        if (idCard>=100000000 && idCard<=999999999){
+            checkValueDate= true;
+        }
+    }while (!checkValueDate)
+    do {
+        checkValueDate= false;
+        birthDayCustomer = prompt("Enter BirthDay Customer(dd/MM/YYYY): ")
+        if (birthDayCustomer.charAt(2)!=='/'||birthDayCustomer.charAt(5)!=='/'){
+            alert("Birthday is Invalid!.Please Try Again");
+            continue;
+        }
+        let day = birthDayCustomer.substring(0,2);
+        let month = birthDayCustomer.substring(3,5);
+        let year = birthDayCustomer.substring(6,10);
+        if (!isNaN(day)&&!isNaN(month)&&!isNaN(year)){
+            day = Number.parseFloat(day);
+            month = Number.parseFloat(month);
+            year = Number.parseFloat(year);
+            if (Number.isInteger(day)&&Number.isInteger(month)&&Number.isInteger(year)){
+                if(day>0&&day<32&&month>0&&month<13&&year>=1950&&year<=2025){
+                    checkValueDate=true;
+                }
+            }
+            if (!checkValueDate){
+                alert("Birthday is Invalid!.Please Try Again");
+            }
+        }
+    }while (!checkValueDate);
+    do {
+        checkValueDate = true;
+        emailCustomer = prompt("Enter Email Customer");
+        let countDoc =0;
+        let countAl = 0;
+        for (let i = 0;i<emailCustomer.length;i++){
+            if (emailCustomer.charAt(i)==="@") {
+                countAl++;
+            }
+            if (emailCustomer.charAt(i)==="."){
+                countDoc++;
+            }
+        }
+        if (countAl!==1||countDoc<1) {
+            checkValueDate = false;
+            alert("Email is Invalid!.Please Try Again");
+        }
+    }while (!checkValueDate)
+
+
+    // let TypeCustomer = "Gold";
+
+    // let amount = 2;
+
+    // let typeService = "Villa";
+    // let TydeRoom = "Vip";
+    // let tien;
+    alert(
+        "Information Customer:\n" +
+        // "Name: "+ nameuser +
+        "\nId Card: "+ idCard +
+        "\nBirth: "+ dateBirth +
+        // "\nEmailCustomer: "+ emailCustomer +
+        "\nAddressCustomer: "+ addressCustomer+
+        // "\nTypeCustomer: "+ TypeCustomer +
+        "\nDiscount: "+ discount+
+        // "\nAmount: "+ amount +
+        "\nRentDay: "+ rentDay
+        // "\nTypeService: "+ typeService +
+        // "\nTydeRoom: "+ TydeRoom
+        )
+</script>
 </body>
 </html>

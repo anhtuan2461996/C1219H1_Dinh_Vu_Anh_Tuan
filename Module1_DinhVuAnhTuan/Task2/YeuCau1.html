@@ -17,6 +17,7 @@
         let rentDay = 2;
         let typeService = "Villa";
         let TydeRoom = "Vip";
+        let tien;
         let choose = prompt(
             "1.Show Information Customer.\n" +
             "2.Edit Information Customer.\n" +
@@ -94,6 +95,53 @@
             }
             break;
         case "3":
+            let moneyPerDay =0;
+            if(typeService ==="Villa"){
+                moneyPerDay =500;
+            }else if(typeService === "House"){
+                moneyPerDay=300;
+            }else {
+                moneyPerDay =100;
+            }
+            let discountCondition =0;
+            let currentYear = new Date().getFullYear();
+            let birthday = new Date(dateBirth).getFullYear();
+            let ageCustomer = currentYear - birthday;
+            if (addressCustomer ==="Da Nang"){
+                discountCondition +=20;
+                if (ageCustomer>30){
+                    discountCondition +=2;
+                }
+                else if (ageCustomer>=20){
+                    discountCondition +=1;
+                }
+            }else if (addressCustomer ==="Hue"){
+                discountCondition +=10;
+            }else if (addressCustomer ==="Quang Nam"){
+                discountCondition +=5;
+            }
+            if (rentDay>7){
+                discountCondition +=30;
+            }else if (rentDay>=5){
+                discountCondition +=20;
+            }else if (rentDay>=2){
+                discountCondition +=10;
+            }
+            if (TypeCustomer ==="Diamond"){
+                discountCondition +=15;
+            }else if (TypeCustomer ==="Plantinum"){
+                discountCondition +=10;
+            }else if (TypeCustomer ==="Gold"){
+                discountCondition +=5;
+            }else if (TypeCustomer ==="Silver"){
+                discountCondition +=2;
+            }
+            let totalPays = moneyPerDay * rentDay * (1-discount/100);
+            totalPays = totalPays -discountCondition;
+            alert("Total Pays After Discount Condition: "+totalPays)
+            break;
+        default :
+            alert("Fail");
             break;
         }
     </script>

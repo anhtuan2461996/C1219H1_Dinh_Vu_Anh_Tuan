@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <table>
+        <tr>
+            <td><select name ="giaTri" id="giaTri">
+                <option name="tinhSoNguyenTo">TinhSoNguyenTo</option>
+                <option name="demSo">DemSoNguyenTo</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="number" id="soNhap"></td>
+            <td><button type="button"onclick="Show()">KiemTra</button> </td>
+        </tr>
+    </table>
+    <script>
+        function Show() {
+            let giaTri = document.getElementById("giaTri");
+            giaTri = giaTri.value;
+            let soNhap = document.getElementById("soNhap");
+            soNhap = parseInt(soNhap.value);
+            let temp;
+            let count=0;
+        switch (giaTri) {
+            case "TinhSoNguyenTo":
+                if(soNhap<2){
+                    alert("so ban vua nhap khong phai so nguyen to");
+                }else {
+                    for (i=2;i<Math.sqrt(soNhap);i++){
+                        if (soNhap %i == 0){
+                            alert("so ban vua nhap khong phai so nguyen to");
+                        }else {
+                            count++;
+                            alert("so ban vua nhap la so nguyen to");
+                        }
+                    }
+                }
+                break;
+            case "DemSoNguyenTo":
+
+                //document.write("Hello");
+                break;
+        }
+    }
+    </script>
 </body>
 </html>

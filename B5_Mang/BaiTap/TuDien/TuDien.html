@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+<!--        <td><select name="value1"id="enlish1"></select></td>-->
+        <td><input type="text" id="str"></td>
+        <td><button type="button" onclick="show();">click</button></td>
+    </tr>
+</table>
+<p id="demo"></p>
+<script>
+    let enlish = ['English','Hello','Name'];
+    //document.getElementById("enlish1").innerText=enlish;
+    let vietNam= ['TiengViet','XinChao','Ten'];
+    function show() {
+        let str = document.getElementById("str");
+        for (i=0;i<enlish.length;i++){
+            if (str.value !== enlish[i]){
+                alert("Tu vung con thieu. ban vui long nhap tu khac");
+                // document.getElementById("demo").innerText=vietNam[i];
+                // document.write(vietNam[i]);
+            }else {
+                document.getElementById("demo").innerText=vietNam[i];
+                // alert("Tu vung con thieu. ban vui long nhap tu khac");
+            }
+        }
+    }
+</script>
+</body>
+</html>
