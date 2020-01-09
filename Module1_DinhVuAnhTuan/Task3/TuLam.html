@@ -14,10 +14,25 @@
     let numberOfAccompanying;
     let rentDay ;
     let nameUser;
-
     // let nameuser = "Tran Huu Tuan";
     // let idCard = "205909029";
-
+    do {
+        checkValueDate = false;
+        nameUser = prompt("Enter Name User: ");
+        let str=nameUser.toString();
+        let ketQua=[str[0]];
+        if (isNaN(nameUser)){
+            for (i=0;i<str.length;i++){
+                if (str[i]==" "&&str[i+1]==" "){
+                    ketQua.push(str[i]);
+                    ketQua.pop(" ");
+                }else {
+                    ketQua.push(str[i]);
+                }
+                checkValueDate = true;
+            }
+        }
+    }while (!checkValueDate)
     do {
         checkValueDate= false;
         rentDay= prompt("Enter Rent Day: ");
@@ -107,7 +122,7 @@
         }
     }while (!checkValueDate)
 
-
+    document.write(ketQua.join(""))
     // let TypeCustomer = "Gold";
 
     // let amount = 2;
@@ -117,7 +132,7 @@
     // let tien;
     alert(
         "Information Customer:\n" +
-        // "Name: "+ nameuser +
+        "Name: "+ nameuser +
         "\nId Card: "+ idCard +
         "\nBirth: "+ dateBirth +
         // "\nEmailCustomer: "+ emailCustomer +
@@ -128,7 +143,7 @@
         "\nRentDay: "+ rentDay
         // "\nTypeService: "+ typeService +
         // "\nTydeRoom: "+ TydeRoom
-        )
+    )
 </script>
 </body>
 </html>

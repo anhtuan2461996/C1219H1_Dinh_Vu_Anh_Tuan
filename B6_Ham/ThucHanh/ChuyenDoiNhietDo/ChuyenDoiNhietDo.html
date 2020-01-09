@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <p>Fahrenheit</p>
+            <td><input type="number" id="num"
+                       oninput="temper(this.value)"
+                       onchange="temper(thi.value)"></td>
+        </tr>
+    </table>
+    <p>Celcius</p>
+    <p id="show"></p>
+    <script>
+        function temper(num1) {
+            num1 = parseFloat(num1);
+            document.getElementById("show").innerHTML=(num1-32)/1.8;;
+        }
+
+    </script>
+</body>
+</html>

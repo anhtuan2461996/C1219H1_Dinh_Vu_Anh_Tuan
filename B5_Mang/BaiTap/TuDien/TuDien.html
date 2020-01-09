@@ -14,22 +14,29 @@
 </table>
 <p id="demo"></p>
 <script>
-    let enlish = ['English','Hello','Name'];
-    let vietNam= ['TiengViet','XinChao','Ten'];
+    let enlish = ['English','Hello','Name','Hi'];
+    let vietNam= ['TiengViet','XinChao','Ten','Chao'];
     function show() {
         let str = document.getElementById("str");
-        for (i=0;i<=enlish.length;i++){
-            if (str.value == enlish[i]){
+        for (i=0;i<=enlish.length;i++) {
+            if (str.value === enlish[i]) {
                 //alert("Tu vung con thieu. ban vui long nhap tu khac");
                 //document.getElementById("demo").innerText=vietNam[i];
                 //document.write(vietNam[i]);
                 alert(vietNam[i]);
-            }else {
-                alert("Tu vung con thieu. ban vui long nhap tu khac");
-                //document.getElementById("demo").innerText=vietNam[i];
-                //document.write("Tu vung con thieu. ban vui long nhap tu khac");
-             }
-            break;
+                break;
+            }
+            if (i === enlish.length - 1) {
+                if (str.value != enlish[enlish.length - 1]) {
+                    document.getElementById("demo").innerText = "Ban nhap sai";
+                }
+                // }else {
+                //     alert("Tu vung con thieu. ban vui long nhap tu khac");
+                //     continue;
+                //     //document.getElementById("demo").innerText=vietNam[i];
+                //     //document.write("Tu vung con thieu. ban vui long nhap tu khac");
+                //  }
+            }
         }
     }
 </script>
