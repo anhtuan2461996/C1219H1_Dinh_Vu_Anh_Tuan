@@ -10,7 +10,7 @@
             <p>Fahrenheit</p>
             <td><input type="number" id="num"
                        oninput="temper(this.value)"
-                       onchange="temper(thi.value)"></td>
+                       onchange="temper(this.value)"></td>
         </tr>
     </table>
     <p>Celcius</p>
@@ -18,9 +18,8 @@
     <script>
         function temper(num1) {
             num1 = parseFloat(num1);
-            document.getElementById("show").innerHTML=(num1-32)/1.8;;
+            document.getElementById("show").innerHTML=(num1-32)/1.8;
         }
-
     </script>
 </body>
 </html>

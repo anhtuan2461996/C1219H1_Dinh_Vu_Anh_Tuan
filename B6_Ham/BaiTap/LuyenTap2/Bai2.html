@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let rad = parseFloat(prompt("Nhap ban kinh hinh tron"));
+        const PI= 3.14;
+        function perimeter() {
+            return 2*PI*rad;
+        }
+        function acreage() {
+            return rad*rad*PI;
+        }
+        document.write("Chu Vi Hinh Tron la: " +perimeter(PI,rad));
+        document.write("<br>")
+        document.write("Dien Tich hinh Trong la: "+ acreage(rad,PI));
+    </script>
+</body>
+</html>

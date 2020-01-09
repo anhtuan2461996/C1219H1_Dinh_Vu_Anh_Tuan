@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let input1 = parseInt(prompt("Nhap so thu 1:"));
+        let input2 = parseInt(prompt("Nhap so thu 2:"));
+        let input3 = parseInt(prompt("Nhap so thu3:"));
+        function min(aa,bb,cc) {
+            if (aa>=bb){
+                if (bb>=cc){
+                    return cc;
+                }else {
+                    return bb;
+                }
+            }else {
+                if (aa>=cc){
+                    return cc;
+                }else {
+                    return aa;
+                }
+            }
+        }
+        alert("gia tri nho nhat cua 3 so la: "+min(input1,input2,input3));
+    </script>
+</body>
+</html>
