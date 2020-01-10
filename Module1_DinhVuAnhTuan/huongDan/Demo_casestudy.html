@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var choose = -1;
+    var ten = "Phan Huu Tai Duc";
+    var cmnd = "201123456";
+    var ngaySinh = "11/1/1988";
+    var email = "duc.phan@codeguym.vn";
+    var diaChi = "Đà Nẵng";
+    var loaiCustomer = "Diamond";
+    var giamGia = 0;
+    var soLuongDiKem = 5;
+    var soNgayThue = 7;
+    var loaiDichVu = "Villa";
+    var loaiPhongThue = "Vip";
+    var soTienPhaiTra = 500 * parseInt(soNgayThue) * (1 - parseFloat(giamGia) / 100);
+
+    displayMenuMain();
+    processMenuMain();
+
+    function displayMenuMain() {
+        choose = prompt(
+            "1. Show Customer Information \n"
+            + "2. Edit Customer Information \n"
+            + "3. Show pay amount"
+        );
+    }
+
+    function processMenuMain() {
+        switch (choose) {
+            case "1":
+                showCustomerInfor();
+                break;
+            case "2":
+                editCustomerInfo();
+                break;
+            case "3":
+                showPayAmount();
+                break;
+        }
+    }
+
+    function showPayAmount() {
+        soTienPhaiTra = getGiaLoaiDichVu() * parseInt(soNgayThue) * (1 - parseFloat(getGiamGia()) / 100);
+        alert(soTienPhaiTra);
+    }
+
+    function getGiaLoaiDichVu() {
+        switch (loaiDichVu) {
+            case "Villa" :
+                return 500;
+            case "House" :
+                return 300;
+            case "Room" :
+                return 100;
+        }
+    }
+
+    function getGiamGia() {
+        tinhMucGiaTheoDiaChi();
+        tinhMucGiaTheoThoiGianLuuTru();
+        tinhMucGiaTheoLoaiCustomer();
+        tinhMucGiaTheoTuoiVaDiaChi();
+        return giamGia;
+    }
+
+    function tinhMucGiaTheoDiaChi() {
+        switch (diaChi) {
+            case "Đà Nẵng" :
+                giamGia += 20;
+                break;
+            case "Huế " :
+                giamGia += 10;
+                break;
+            case "Quảng Nam" :
+                giamGia += 5;
+                break;
+        }
+    }
+
+    function tinhMucGiaTheoThoiGianLuuTru() {
+        if (soNgayThue > 7) {
+            giamGia += 30;
+        } else if (5 <= soNgayThue && soNgayThue <= 7) {
+            giamGia += 20;
+        } else if (2 <= soNgayThue && soNgayThue <= 4) {
+            giamGia += 10;
+        }
+    }
+
+    function tinhMucGiaTheoLoaiCustomer() {
+        switch (loaiCustomer) {
+            case "Diamond":
+                giamGia += 15;
+                break;
+            case "Platium":
+                giamGia += 10;
+                break;
+            case "Gold":
+                giamGia += 5;
+                break;
+            case "Silver":
+                giamGia += 2;
+                break;
+            case "Member":
+                giamGia += 0;
+                break;
+        }
+    }
+
+    function tinhMucGiaTheoTuoiVaDiaChi() {
+        var age = new Date().getFullYear() - new Date(ngaySinh).getFullYear();
+        if (age > 30 && diaChi == "Đà Nẵng") {
+            giamGia += 2;
+        } else if (20 <= age && age <= 30 && diaChi == "Đà Nẵng") {
+            giamGia += 1;
+        }
+    }
+
+    function editCustomerInfo() {
+        choose = prompt(
+            "Choose infor to edit"
+            + "\n 1.ten " + ten
+            + "\n 2.cmnd " + cmnd
+            + "\n 3.ngaySinh " + ngaySinh
+            + "\n 4.email " + email
+            + "\n 5.diaChi " + diaChi
+            + "\n 6.loaiCustomer " + loaiCustomer
+            + "\n 7.giamGia " + giamGia
+            + "\n 8.soLuongDiKem " + soLuongDiKem
+            + "\n 9.soNgayThue " + soNgayThue
+            + "\n 10.loaiDichVu " + loaiDichVu
+            + "\n 11.loaiPhongThue " + loaiPhongThue
+        );
+        processEditCustomerInfo();
+        showCustomerInfor();
+    }
+
+    function processEditCustomerInfo() {
+        switch (choose) {
+            case "1":
+                ten = prompt("Input ten to edit ");
+                break;
+            case "2":
+                cmnd = prompt("Input cmnd to edit ");
+                break;
+            case "3":
+                ngaySinh = prompt("Input ngaySinh to edit ");
+                break;
+            case "4":
+                email = prompt("Input email to edit ");
+                break;
+            case "5":
+                diaChi = prompt("Input diaChi to edit ");
+                break;
+            case "6":
+                loaiCustomer = prompt("Input loaiCustomer to edit ");
+                break;
+            case "7":
+                giamGia = prompt("Input giamGia to edit ");
+                break;
+            case "8":
+                soLuongDiKem = prompt("Input soLuongDiKem to edit ");
+                break;
+            case "9":
+                soNgayThue = prompt("Input soNgayThue to edit ");
+                break;
+            case "10":
+                loaiDichVu = prompt("Input loaiDichVu to edit ");
+                break;
+            case "11":
+                loaiPhongThue = prompt("Input loaiPhongThue to edit ");
+                break;
+        }
+    }
+
+    function showCustomerInfor() {
+        alert("Thong tin vua nhap :"
+            + "\n ten " + ten
+            + "\n cmnd " + cmnd
+            + "\n ngaySinh " + ngaySinh
+            + "\n email " + email
+            + "\n diaChi " + diaChi
+            + "\n loaiCustomer " + loaiCustomer
+            + "\n giamGia " + giamGia
+            + "\n soLuongDiKem " + soLuongDiKem
+            + "\n soNgayThue " + soNgayThue
+            + "\n loaiDichVu " + loaiDichVu
+            + "\n loaiPhongThue " + loaiPhongThue
+            + "\n soTienPhaiTra " + soTienPhaiTra
+        );
+    };
+
+</script>
+</body>
+</html>
