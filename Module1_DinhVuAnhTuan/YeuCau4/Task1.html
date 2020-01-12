@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arrayNameCustomers=[];
+        //let result ="";
+        let choose = prompt("1. Add new Customers"+
+        "\n2. Delete customer");
+        switch (choose) {
+            case "1":
+                let arrLenght = prompt("Nhap vao so luong khach hanh them: ");
+                for (let i =0;i<arrLenght;i++){
+                    arrayNameCustomers.push(prompt("Nhap vao ten khach hang: " + (i+1)));
+                }
+                var result ="";
+                for (let i =0;i<arrayNameCustomers.length;i++){
+                    result += "\n" + (i+1) + "." + arrayNameCustomers[i];
+                }
+                alert(result);
+                result = "";
+                arrayNameCustomers.sort();//nho toi loi
+                arrayNameCustomers.reverse();//in ra thu tu dao ngoc
+                for (let i =0;i<arrayNameCustomers.length;i++){
+                    result += "\n" + (i+1) + "." + arrayNameCustomers[i];
+                }
+                alert(result);
+                break;
+            case "2":
+                arrayNameCustomers[0]="Kien";
+                arrayNameCustomers[1]="Tuan";
+                arrayNameCustomers[2]="Minh";
+                arrayNameCustomers[3]="Hai";
+                arrayNameCustomers[4]="Duong";
+                arrayNameCustomers[5]="Dong";
+                arrayNameCustomers[6]="Nam";
+                arrayNameCustomers[7]="Tay";
+                arrayNameCustomers[8]="Ha";
+                arrayNameCustomers[9]="Lem";
+                var result ="";
+                for (let i =0;i<arrayNameCustomers.length;i++){
+                    result += "\n" + (i+1) + "." + arrayNameCustomers[i];
+                }
+                let indexDelete = prompt("Nhap vi tri muon xoa: "+ result);
+                arrayNameCustomers.splice(Number.parseInt(indexDelete)-1,1);
+                let resultAfterDelete ="";
+                for (let i =0;i<arrayNameCustomers.length;i++){
+                    resultAfterDelete += "\n" + (i+1) + "." + arrayNameCustomers[i];
+                }
+                alert("List danh sach khach hang sau khi da xoa: " + resultAfterDelete);
+                break;
+            default:
+                alert("Fail.");
+        }
+    </script>
+</body>
+</html>

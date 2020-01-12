@@ -13,26 +13,51 @@
     let discount ;
     let numberOfAccompanying;
     let rentDay ;
-    let nameUser;
-    // let nameuser = "Tran Huu Tuan";
-    // let idCard = "205909029";
-    do {
-        checkValueDate = false;
-        nameUser = prompt("Enter Name User: ");
-        let str=nameUser.toString();
-        let ketQua=[str[0]];
-        if (isNaN(nameUser)){
-            for (i=0;i<str.length;i++){
-                if (str[i]==" "&&str[i+1]==" "){
-                    ketQua.push(str[i]);
-                    ketQua.pop(" ");
-                }else {
-                    ketQua.push(str[i]);
-                }
-                checkValueDate = true;
-            }
+    let nameCustomer = prompt("Nhap name khach hang: ");
+    let nameStandardized="";
+    let addressCustomer = prompt("Nhap dia chi khach hang: ");
+    let addressStandardized="";
+    let typeCustomer = prompt("Loai khach hang: ");
+    let typeCustomerStandardized="";
+
+    nameCustomer = nameCustomer.trim().toLocaleLowerCase();
+    for (let  i = 0;i<nameCustomer.length;i++){
+        if (nameCustomer.charAt(i) === " "&&nameCustomer.charAt(i+1) === " "){
+            continue;
         }
-    }while (!checkValueDate)
+        if (i === 0||nameCustomer.charAt(i-1)===" "){
+            nameStandardized += nameCustomer.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        nameStandardized += nameCustomer.charAt(i);
+    }
+    nameCustomer = nameStandardized;
+
+    addressCustomer = addressCustomer.trim().toLocaleLowerCase();
+    for (let i = 0;i<addressCustomer.length;i++){
+        if (addressCustomer.charAt(i)===" "&&addressCustomer.charAt(i+1)===" "){
+            continue;
+        }
+        if (i===0|| addressCustomer.charAt(i-1)===" "){
+            addressStandardized +=addressCustomer.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        addressStandardized +=addressCustomer.charAt(i);
+    }
+    addressCustomer = addressStandardized;
+
+    typeCustomer = typeCustomer.trim().toLocaleLowerCase();
+    for (let i =0;i<typeCustomer.length;i++){
+        if (typeCustomer.charAt(i)===" "&&typeCustomer.charAt(i+1)===" "){
+            continue;
+        }
+        if (i === 0||typeCustomer.charAt(i-1)===" "){
+            typeCustomerStandardized += typeCustomer.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        typeCustomerStandardized += typeCustomer.charAt(i);
+    }
+    typeCustomer = typeCustomerStandardized;
     do {
         checkValueDate= false;
         rentDay= prompt("Enter Rent Day: ");
@@ -122,28 +147,25 @@
         }
     }while (!checkValueDate)
 
-    document.write(ketQua.join(""))
     // let TypeCustomer = "Gold";
-
     // let amount = 2;
-
     // let typeService = "Villa";
     // let TydeRoom = "Vip";
     // let tien;
     alert(
         "Information Customer:\n" +
-        "Name: "+ nameuser +
+        "Name: "+ nameCustomer +
         "\nId Card: "+ idCard +
-        "\nBirth: "+ dateBirth +
+        "\nBirth: "+ birthDayCustomer +
         // "\nEmailCustomer: "+ emailCustomer +
         "\nAddressCustomer: "+ addressCustomer+
-        // "\nTypeCustomer: "+ TypeCustomer +
+        "\nTypeCustomer: "+ typeCustomer +
         "\nDiscount: "+ discount+
         // "\nAmount: "+ amount +
         "\nRentDay: "+ rentDay
         // "\nTypeService: "+ typeService +
         // "\nTydeRoom: "+ TydeRoom
-    )
+        )
 </script>
 </body>
 </html>
