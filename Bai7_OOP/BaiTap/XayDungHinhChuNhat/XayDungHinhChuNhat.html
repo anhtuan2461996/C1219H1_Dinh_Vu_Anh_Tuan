@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="canvasexample"width="300"height="200" style="background: whitesmoke;"></canvas>
+    <p id="demo"></p>
+<script>
+
+    function Rectangle(x,y){
+        this.x=x;
+        this.y=y;
+        this.s = function () {
+            return this.x*this.y;
+        };
+        this.c =function () {
+            return (this.y+this.x)*2;
+        };
+        // this.s=x*y;
+        // this.c=(x+y)*2;
+    }
+
+    function creatCircle(){
+        let c =document.getElementById("canvasexample");
+        let ctx = c.getContext("2d");
+        let x = parseInt(prompt("Nhap chieu dai hinh chu nhat: "));
+        let y = parseInt(prompt("Nhap chieu rong hinh chu nhat: "));
+        let circle = new Rectangle(x,y);
+        ctx.beginPath();
+        ctx.fillStyle="#4CAF50";
+        ctx.fillRect(20,20,x,y);
+        document.write("dien tich hinh chu nhat la: "+circle.s());
+        document.write("<br>");
+        document.write("Chu vi hinh chu nhat la: "+circle.c());
+    }
+    creatCircle();
+
+</script>
+</body>
+</html>
