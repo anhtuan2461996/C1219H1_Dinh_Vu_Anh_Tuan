@@ -11,7 +11,9 @@
         this.keyvin = keyvin;
         this.doF =doF;
         this.getKeyvin = function () {
-            return this.c+273;
+            if(c>-273){
+                this.keyvin = this.c+273;
+            }
         };
         this.getDoF = function () {
             return (this.c*1.8)+32;
@@ -20,8 +22,13 @@
             return this.c;
         }
     };
-    let temperature = new myTemperature(5);
-    document.write("Nhiet do c la: "+ temperature.getDoF());
+    function begin(){
+        let temperature = new myTemperature;
+        document.
+    }
+
+    // let temperature = new myTemperature(5);
+    // document.write("Nhiet do c la: "+ temperature.getDoF(5));
     // document.write("<br>");
     // document.write("Nhiet do kenvin la: "+ temperature.f());
     // document.write("<br>");

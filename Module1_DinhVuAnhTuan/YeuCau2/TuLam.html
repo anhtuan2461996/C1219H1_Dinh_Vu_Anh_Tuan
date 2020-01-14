@@ -7,10 +7,10 @@
 <body>
 <script>
     let choose = -1;
-    let nameCustomer = "Phan Huu Tai Duc";
-    let idCard = "201123456";
-    let dateBirth = "11/1/1988";
-    let emailCustomer = "duc.phan@codeguym.vn";
+    let nameCustomer = "Dinh Vu Anh Tuan";
+    let idCard = "205909029";
+    let dateBirth = "11/11/1996";
+    let emailCustomer = "dinhvuanhtuan1@gmail.com";
     let addressCustomer = "Đà Nẵng";
     let typeCustomer = "Diamond";
     let discount = 0;
@@ -18,8 +18,9 @@
     let rentDay = 7;
     let typeService = "Villa";
     let tydeRoom = "Vip";
-    let pay = 500 * parseInt(rentDay) * (1 - parseFloat(discount) / 100);
+    //let pay = 500 * parseInt(rentDay) * (1 - parseFloat(discount) / 100);
     displayMenuMain();
+    processMenumain();
     function displayMenuMain() {
         choose = prompt(
             "1.Show Customer Information\n"+
@@ -29,13 +30,90 @@
     }
     function processMenumain() {
         switch (choose) {
-            case 1:
+            case "1":
+                showCustomerInfor();
                 break;
-            case 2:
+            case "2":
+                editInformationCustomer();
                 break;
-            case 3:
+            case "3":
+                showPayAmount();
                 break;
         }
+    }
+    function showCustomerInfor() {
+        alert("Thong tin vua nhap :"
+            + "\n ten " + nameCustomer
+            + "\n cmnd " + idCard
+            + "\n ngaySinh " + dateBirth
+            + "\n email " + emailCustomer
+            + "\n diaChi " + addressCustomer
+            + "\n loaiCustomer " + typeCustomer
+            + "\n giamGia " + discount
+            + "\n soLuongDiKem " + amount
+            + "\n soNgayThue " + rentDay
+            + "\n loaiDichVu " + typeService
+            + "\n loaiPhongThue " + tydeRoom
+            // + "\n soTienPhaiTra " + soTienPhaiTra
+        );
+    }
+    function editInformationCustomer() {
+        choose = prompt(
+            "Choose infor to edit"
+            + "\n 1.ten " + nameCustomer
+            + "\n 2.cmnd " + idCard
+            + "\n 3.ngaySinh " + dateBirth
+            + "\n 4.email " + emailCustomer
+            + "\n 5.diaChi " + addressCustomer
+            + "\n 6.loaiCustomer " + typeCustomer
+            + "\n 7.giamGia " + discount
+            + "\n 8.soLuongDiKem " + amount
+            + "\n 9.soNgayThue " + rentDay
+            + "\n 10.loaiDichVu " + typeService
+            + "\n 11.loaiPhongThue " + tydeRoom
+        );
+        processEditInformationCustomer();
+        showCustomerInfor();
+    }
+    function processEditInformationCustomer() {
+        switch (choose) {
+            case "1":
+                nameCustomer = prompt("Input ten to edit ");
+                break;
+            case "2":
+                idCard = prompt("Input cmnd to edit ");
+                break;
+            case "3":
+                dateBirth = prompt("Input ngaySinh to edit ");
+                break;
+            case "4":
+                emailCustomer = prompt("Input email to edit ");
+                break;
+            case "5":
+                addressCustomer = prompt("Input diaChi to edit ");
+                break;
+            case "6":
+                typeCustomer = prompt("Input loaiCustomer to edit ");
+                break;
+            case "7":
+                discount = prompt("Input giamGia to edit ");
+                break;
+            case "8":
+                amount = prompt("Input soLuongDiKem to edit ");
+                break;
+            case "9":
+                rentDay = prompt("Input soNgayThue to edit ");
+                break;
+            case "10":
+                typeService = prompt("Input loaiDichVu to edit ");
+                break;
+            case "11":
+                tydeRoom = prompt("Input loaiPhongThue to edit ");
+                break;
+        }
+    }
+    function showPayAmount() {
+
     }
 </script>
 <!--    <p> Thong Tin Khach Hang</p>-->
