@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+<table>
+    <tr>
+        <td>Nhap chieu dai:</td>
+        <td><input type="text" id="chieuDai"></td>
+    </tr>
+    <tr>
+        <td>Nhap chieu rong:</td>
+        <td><input type="text" id="chieuRong"></td>
+    </tr>
+    <tr>
+        <td><button type="button"></button></td>
+    </tr>
+</table>
     <canvas id="canvasexample"width="300"height="200" style="background: whitesmoke;"></canvas>
     <p id="demo"></p>
 <script>
@@ -23,14 +36,14 @@
     }
 
     function creatCircle(){
-        let c =document.getElementById("canvasexample");
-        let ctx = c.getContext("2d");
+        // let c =document.getElementById("canvasexample");
+        // let ctx = c.getContext("2d");
         let x = parseInt(prompt("Nhap chieu dai hinh chu nhat: "));
         let y = parseInt(prompt("Nhap chieu rong hinh chu nhat: "));
         let circle = new Rectangle(x,y);
-        ctx.beginPath();
-        ctx.fillStyle="#4CAF50";
-        ctx.fillRect(20,20,x,y);
+        // ctx.beginPath();
+        // ctx.fillStyle="#4CAF50";
+        // ctx.fillRect(20,20,x,y);
         document.write("dien tich hinh chu nhat la: "+circle.s());
         document.write("<br>");
         document.write("Chu vi hinh chu nhat la: "+circle.c());
