@@ -20,7 +20,7 @@ let human = function () {
         return this.gender;
     };
     this.setGender =function (gender) {
-        return this.gender;
+        this.gender =gender;
     };
     this.checkApple = function (apple) {
         return apple.weight>0;
@@ -28,6 +28,7 @@ let human = function () {
     this.eat=function (apple) {
         if (this.checkApple(apple)){
             this.weight++;
+            apple.decrease();
         }
     };
     this.say = function (say) {
@@ -60,8 +61,15 @@ let human = function () {
     adam.getWeight();
     adam.say("Eva muon an tao ko?");
     adam.eat(apple);
+    adam.eat(apple);
+    adam.eat(apple);
+    adam.eat(apple);
+    adam.eat(apple);
+    document.write("<br>");
     document.write(adam.getWeight());
-    document.write(adam.setWeight());
+    document.write("<br>");
+    document.write(apple.getWight());
+    document.write("<br>");
 
     let eva= new human();
     eva.setName("eva");
@@ -71,5 +79,16 @@ let human = function () {
     eva.getWeight();
     eva.say("Eva uon an tao");
     eva.eat(apple);
+    eva.eat(apple);
+    eva.eat(apple);
+    eva.eat(apple);
+    eva.eat(apple);
+    eva.eat(apple);
+
+    document.write("<br>");
     document.write(eva.getWeight());
-    document.write(eva.setWeight());
+    document.write("<br>");
+    document.write(apple.setWeight());
+    document.write("<br>");
+    document.write(adam.getName());
+    adam.say(" Sao Eva an het tao roi");

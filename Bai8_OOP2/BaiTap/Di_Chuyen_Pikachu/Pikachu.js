@@ -1,25 +1,32 @@
-function Hero(top,left) {
-    //this.image=image;
-    this.top=top;
-    this.left=left;
+let hero = new Hero(20);
 
-    // this.getHero =function () {
-    //     return pikapika;
-    // };
-    this.moveRight =function () {
-        this.left =this.left+20+"px";
-        console.log("ok: "+this.left);
+function Hero(left) {
+    //this.image=image;
+    //this.top=top;
+    this.url1 = document.getElementById("pikapika");
+    this.url1.style.left = this.speed + "px";
+    this.speed = left;
+
+    this.moveRight = function () {
+        this.speed += 100;
+        this.url1 = document.getElementById("pikapika");
+        this.url1.style.left = this.speed + "px";
+        console.log(this.speed);
     };
 }
-let hero = new Hero(20,30);
-window.onload =start();
-function start() {
-    hero = document.getElementById("pikapika");
-    hero.style.position ="relative";
-    hero.style.left= "0px";
-    // if (hero.left<window.innerWidth){
-    //     hero.moveRight();
-    // }
-    // document.getElementById("game").innerHTML = hero.getHero();
-    // setTimeout(start,500)
+
+function abc() {
+    hero.moveRight();
 }
+
+// let hero = new Hero(20,30);
+// hero.moveRight();
+// window.onload =start();
+// function start() {
+
+// if (hero.left<window.innerWidth){
+//     hero.moveRight();
+// }
+// document.getElementById("game").innerHTML = hero.getHero();
+// setTimeout(start,500)
+// }
