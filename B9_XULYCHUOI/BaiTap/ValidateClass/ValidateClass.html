@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let regexp = /^(C|A|P)[0-9]{4,}(G|H|I|K|L|M)$/;
+    function is_usZipCode(str) {
+        regexp = /^(C|A|P)[0-9]{4,}(G|H|I|K|L|M)$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    let zipcode = "C0318G";
+    document.write(is_usZipCode(zipcode));
+    zipcode = "M0318G";
+    document.write(is_usZipCode(zipcode));
+</script>
+</body>
+</html>

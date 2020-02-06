@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    function is_usZipCode(str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    let zipcode = "a@gmail.com";
+    document.write(is_usZipCode(zipcode));
+    zipcode= "ab@yahoo.com";
+    document.write(is_usZipCode(zipcode));
+    zipcode= "abc@hotmail.com";
+    document.write(is_usZipCode(zipcode));
+    zipcode= "@gmail.com";
+    document.write(is_usZipCode(zipcode));
+    zipcode= "ab@gmai";
+    document.write(is_usZipCode(zipcode));
+    zipcode= "@#abc@gmail.com";
+    document.write(is_usZipCode(zipcode));
+</script>
+</body>
+</html>

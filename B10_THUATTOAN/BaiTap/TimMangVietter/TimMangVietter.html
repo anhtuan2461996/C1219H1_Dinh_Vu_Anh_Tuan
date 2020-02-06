@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let sdt=["0354074585","0754074585"]
+    let regexp = /^[03][2-5]+[0-9\s.-]{6,13}$/;
+    function is_usZipCode(str) {
+        regexp = /^[03][2-5]+[0-9\s.-]{6,13}$/;
+        for (let i=0;i<str.length;i++){
+            if (regexp.test(str)) {
+                document.write("So dt ban vua nhap la mang viet theo" +str);
+            }else {
+                document.write("</br>");
+                document.write("So dt ban vua nhap khong phai mang vietter");
+            }
+        }
+    }
+    document.write(is_usZipCode(sdt[0]));
+    //document.write(is_usZipCode(sdt[1]));
+</script>
+</body>
+</html>
