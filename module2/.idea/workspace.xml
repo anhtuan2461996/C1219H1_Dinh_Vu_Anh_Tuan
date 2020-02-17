@@ -1,17 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="007c43e8-b233-4724-97e3-ff79575328bf" name="Default Changelist" comment="" />
+    <list default="true" id="007c43e8-b233-4724-97e3-ff79575328bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_BaiTap/BaiTap_HienThiLoiChao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_BaiTap/BaiTap_UngDungDocSoThanhChu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_GiaiPTBacNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraNamNhuan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraSoNguyenTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_MenuUngDung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToBe100.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToShow20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungBien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungToanTu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SystemTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TimGiaTriTrongMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TimUCLN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TinhChiSoCoThe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TinhSoNgayTrongThang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_UngDungTinhTienLai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang_ThucHanh/nhap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module1/src/C1219H1_Dinh_Vu_Anh_Tuan" beforeDir="false" afterPath="$PROJECT_DIR$/../Module1/src/C1219H1_Dinh_Vu_Anh_Tuan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NgonJava/abc.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1XmVJMa5BBkwfqSqo9CyJxXw27r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.nhap">
+    <configuration name="ThucHanh_SoNguyenToBe100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava_ThucHanh.ThucHanh_SoNguyenToBe100" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="B1_NgonNguJava_ThucHanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThucHanh_TimUCLN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava_ThucHanh.ThucHanh_TimUCLN" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="B1_NgonNguJava_ThucHanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThucHanh_TinhChiSoCoThe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava_ThucHanh.ThucHanh_TinhChiSoCoThe" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="B1_NgonNguJava_ThucHanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThucHanh_UngDungTinhTienLai" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava_ThucHanh.ThucHanh_UngDungTinhTienLai" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="B1_NgonNguJava_ThucHanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nhap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B2_Mang_ThucHanh.nhap" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="B2_Mang_ThucHanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.nhap" />
+        <item itemvalue="Application.ThucHanh_SoNguyenToBe100" />
+        <item itemvalue="Application.ThucHanh_TinhChiSoCoThe" />
+        <item itemvalue="Application.ThucHanh_UngDungTinhTienLai" />
+        <item itemvalue="Application.ThucHanh_TimUCLN" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -23,7 +139,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581651183062</updated>
+      <workItem from="1581651198948" duration="1252000" />
+      <workItem from="1581747370341" duration="4995000" />
+      <workItem from="1581809125205" duration="6026000" />
+      <workItem from="1581819759893" duration="6943000" />
+      <workItem from="1581871364691" duration="759000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1581872126276">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581872126276" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1581872126276">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581872126276" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1581872126276">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581872126276" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1581872126276">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581872126276" />
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1581871365910">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581871365910" />
   </component>
 </project>
