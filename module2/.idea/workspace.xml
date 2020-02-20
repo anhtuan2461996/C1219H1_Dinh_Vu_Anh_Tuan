@@ -2,28 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="007c43e8-b233-4724-97e3-ff79575328bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_BaiTap/BaiTap_HienThiLoiChao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_BaiTap/BaiTap_UngDungDocSoThanhChu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_GiaiPTBacNhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraNamNhuan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraSoNguyenTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_MenuUngDung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToBe100.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToShow20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungBien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungToanTu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SystemTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TimGiaTriTrongMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TimUCLN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TinhChiSoCoThe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TinhSoNgayTrongThang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_UngDungTinhTienLai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B2_Mang_ThucHanh/nhap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/BaiTap/ThemPhanTuVaoMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/BaiTap/hoanvi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/BaiTap/nhap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/ChuyenDoiNhietDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/TImMinMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/TimMaxMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/PhuongTrinhBac2/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/PhuongTrinhBac2/QuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/StopWatch/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/StopWatch/StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B3_OOP/ThucHanh/Ex14_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B3_OOP/ThucHanh/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Module1/src/C1219H1_Dinh_Vu_Anh_Tuan" beforeDir="false" afterPath="$PROJECT_DIR$/../Module1/src/C1219H1_Dinh_Vu_Anh_Tuan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NgonJava/abc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_BaiTap/BaiTap_HienThiLoiChao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_BaiTap/BaiTap_UngDungDocSoThanhChu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_GiaiPTBacNhat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraNamNhuan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraSoNguyenTo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_MenuUngDung.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToBe100.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToShow20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungBien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungToanTu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_TimGiaTriTrongMang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_TimUCLN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_TinhChiSoCoThe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_TinhSoNgayTrongThang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_UngDungTinhTienLai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B2_Mang_ThucHanh/nhap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_BaiTap/BaiTap_HienThiLoiChao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/BaiTap/BaiTap_HienThiLoiChao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_BaiTap/BaiTap_UngDungDocSoThanhChu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/BaiTap/BaiTap_UngDungDocSoThanhChu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_GiaiPTBacNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_GiaiPTBacNhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraNamNhuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_KiemTraNamNhuan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraSoNguyenTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_KiemTraSoNguyenTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_MenuUngDung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_MenuUngDung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToBe100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SoNguyenToBe100.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToShow20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SoNguyenToShow20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungBien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SuDungBien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungToanTu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SuDungToanTu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SystemTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TimGiaTriTrongMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_TimGiaTriTrongMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TimUCLN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_TimUCLN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TinhChiSoCoThe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_TinhChiSoCoThe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TinhSoNgayTrongThang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_TinhSoNgayTrongThang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_UngDungTinhTienLai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_UngDungTinhTienLai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B2_Mang_ThucHanh/nhap.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,14 +79,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.nhap">
-    <configuration name="ThucHanh_SoNguyenToBe100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava_ThucHanh.ThucHanh_SoNguyenToBe100" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codegym\C1219H1\module2\src" />
+      <recent name="D:\Codegym\C1219H1\module2\B2_Mang" />
+      <recent name="D:\Codegym\C1219H1\module2\B1_NgonNguJava" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Account" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B3_OOP.BaiTap.StopWatch.Account" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B1_NgonNguJava_ThucHanh.*" />
+          <option name="PATTERN" value="B3_OOP.BaiTap.StopWatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThucHanh_TimUCLN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava_ThucHanh.ThucHanh_TimUCLN" />
+    <configuration name="Ex14_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B3_OOP.ThucHanh.Ex14_1" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B1_NgonNguJava_ThucHanh.*" />
+          <option name="PATTERN" value="B3_OOP.ThucHanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThucHanh_TinhChiSoCoThe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava_ThucHanh.ThucHanh_TinhChiSoCoThe" />
+    <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B3_OOP.BaiTap.StopWatch.MyClass" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B1_NgonNguJava_ThucHanh.*" />
+          <option name="PATTERN" value="B3_OOP.BaiTap.StopWatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThucHanh_UngDungTinhTienLai" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava_ThucHanh.ThucHanh_UngDungTinhTienLai" />
+    <configuration name="QuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B3_OOP.BaiTap.PhuongTrinhBac2.QuadraticEquation" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B1_NgonNguJava_ThucHanh.*" />
+          <option name="PATTERN" value="B3_OOP.BaiTap.PhuongTrinhBac2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nhap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B2_Mang_ThucHanh.nhap" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B4_KeThua.ThucHanh.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B2_Mang_ThucHanh.*" />
+          <option name="PATTERN" value="B4_KeThua.ThucHanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.nhap" />
-        <item itemvalue="Application.ThucHanh_SoNguyenToBe100" />
-        <item itemvalue="Application.ThucHanh_TinhChiSoCoThe" />
-        <item itemvalue="Application.ThucHanh_UngDungTinhTienLai" />
-        <item itemvalue="Application.ThucHanh_TimUCLN" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Account" />
+        <item itemvalue="Application.MyClass" />
+        <item itemvalue="Application.QuadraticEquation" />
+        <item itemvalue="Application.Ex14_1" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +185,15 @@
       <workItem from="1581809125205" duration="6026000" />
       <workItem from="1581819759893" duration="6943000" />
       <workItem from="1581871364691" duration="759000" />
+      <workItem from="1581903593112" duration="111000" />
+      <workItem from="1581903840868" duration="75000" />
+      <workItem from="1581904243966" duration="8657000" />
+      <workItem from="1581926327998" duration="1262000" />
+      <workItem from="1581989367398" duration="595000" />
+      <workItem from="1581997753973" duration="3087000" />
+      <workItem from="1582030901762" duration="6956000" />
+      <workItem from="1582074918343" duration="4697000" />
+      <workItem from="1582170550144" duration="460000" />
     </task>
     <servers />
   </component>
@@ -151,25 +201,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1581872126276">
+    <state x="275" y="5" width="816" height="723" key="#Intentions" timestamp="1582038302849">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581872126276" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1581872126276">
+    <state x="275" y="5" width="816" height="723" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1582038302849" />
+    <state x="484" y="256" width="398" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581907319493">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581872126276" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1581872126276">
+    <state x="484" y="256" width="398" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1581907319493" />
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1582170912518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581872126276" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1581872126276">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582170912518" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1582170912518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581872126276" />
-    <state x="390" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1581871365910">
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582170912518" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1582170912518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581871365910" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582170912518" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1582170912518">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582170912518" />
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1582170570269">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582170570269" />
   </component>
 </project>
