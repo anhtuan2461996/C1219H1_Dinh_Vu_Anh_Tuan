@@ -14,7 +14,7 @@ public class Account {
         //stopWatch.starTime()=System.currentTimeMillis();
 //        LocalTime sql = LocalTime.now();
 //        System.out.println(sql);
-        stopWatch.starTime();
+        //stopWatch.starTime();
         System.out.println(stopWatch.star());
         for (int i =0;i<100000000;i++){
             i++;
