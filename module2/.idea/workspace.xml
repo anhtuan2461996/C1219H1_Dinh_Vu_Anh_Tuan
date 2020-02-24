@@ -2,55 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="007c43e8-b233-4724-97e3-ff79575328bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/B2_Mang/BaiTap/ThemPhanTuVaoMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B2_Mang/BaiTap/hoanvi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B2_Mang/BaiTap/nhap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/ChuyenDoiNhietDo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/TImMinMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/TimMaxMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/PhuongTrinhBac2/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/PhuongTrinhBac2/QuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/StopWatch/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/StopWatch/StopWatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B3_OOP/ThucHanh/Ex14_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B3_OOP/ThucHanh/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/BaiTap/HienThi20SoNguyenTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/BaiTap/HienThiCacLoaiHinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/BaiTap/UngDungChuyenDoiTienTe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/ArrayIndexOutOfBoundsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/DaoMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B2_Mang/ThucHanh/DemSLSVThiDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Circle/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Circle/CircleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Circle/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Circle/CylinderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/MoveablePoint/MoveblePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/MoveablePoint/MoveblePointTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/MoveablePoint/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/MoveablePoint/PointTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Point/Point2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Point/Point2DTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Point/Point3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Point/Point3DTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/CircleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/RectangleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/ShapeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/ThucHanh/SquareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Module1/src/C1219H1_Dinh_Vu_Anh_Tuan" beforeDir="false" afterPath="$PROJECT_DIR$/../Module1/src/C1219H1_Dinh_Vu_Anh_Tuan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_BaiTap/BaiTap_HienThiLoiChao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_BaiTap/BaiTap_UngDungDocSoThanhChu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_GiaiPTBacNhat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraNamNhuan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraSoNguyenTo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_MenuUngDung.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToBe100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToShow20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungBien.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungToanTu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_SystemTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_TimGiaTriTrongMang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_TimUCLN.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_TinhChiSoCoThe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_TinhSoNgayTrongThang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B1_NgonNguJava_ThucHanh/ThucHanh_UngDungTinhTienLai.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/B2_Mang_ThucHanh/nhap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_BaiTap/BaiTap_HienThiLoiChao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/BaiTap/BaiTap_HienThiLoiChao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_BaiTap/BaiTap_UngDungDocSoThanhChu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/BaiTap/BaiTap_UngDungDocSoThanhChu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_GiaiPTBacNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_GiaiPTBacNhat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraNamNhuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_KiemTraNamNhuan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_KiemTraSoNguyenTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_KiemTraSoNguyenTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_MenuUngDung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_MenuUngDung.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToBe100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SoNguyenToBe100.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SoNguyenToShow20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SoNguyenToShow20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungBien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SuDungBien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SuDungToanTu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SuDungToanTu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_SystemTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TimGiaTriTrongMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_TimGiaTriTrongMang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TimUCLN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_TimUCLN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TinhChiSoCoThe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_TinhChiSoCoThe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_TinhSoNgayTrongThang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_TinhSoNgayTrongThang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_NgonNguJava_ThucHanh/ThucHanh_UngDungTinhTienLai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_NgonNguJava/ThucHanh/ThucHanh_UngDungTinhTienLai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B2_Mang_ThucHanh/nhap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B3_OOP/BaiTap/StopWatch/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/B3_OOP/BaiTap/StopWatch/Account.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,13 +74,13 @@
       <recent name="D:\Codegym\C1219H1\module2\B1_NgonNguJava" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="Account" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B3_OOP.BaiTap.StopWatch.Account" />
+  <component name="RunManager" selected="Application.DaoMang">
+    <configuration name="ArrayIndexOutOfBoundsException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B2_Mang.ThucHanh.ArrayIndexOutOfBoundsException" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B3_OOP.BaiTap.StopWatch.*" />
+          <option name="PATTERN" value="B2_Mang.ThucHanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ex14_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B3_OOP.ThucHanh.Ex14_1" />
+    <configuration name="DaoMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B2_Mang.ThucHanh.DaoMang" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B3_OOP.ThucHanh.*" />
+          <option name="PATTERN" value="B2_Mang.ThucHanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B3_OOP.BaiTap.StopWatch.MyClass" />
+    <configuration name="HienThi20SoNguyenTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava.BaiTap.HienThi20SoNguyenTo" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B3_OOP.BaiTap.StopWatch.*" />
+          <option name="PATTERN" value="B1_NgonNguJava.BaiTap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B3_OOP.BaiTap.PhuongTrinhBac2.QuadraticEquation" />
+    <configuration name="HienThiCacLoaiHinh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava.BaiTap.HienThiCacLoaiHinh" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B3_OOP.BaiTap.PhuongTrinhBac2.*" />
+          <option name="PATTERN" value="B1_NgonNguJava.BaiTap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B4_KeThua.ThucHanh.Test" />
+    <configuration name="UngDungChuyenDoiTienTe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B1_NgonNguJava.BaiTap.UngDungChuyenDoiTienTe" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B4_KeThua.ThucHanh.*" />
+          <option name="PATTERN" value="B1_NgonNguJava.BaiTap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Account" />
-        <item itemvalue="Application.MyClass" />
-        <item itemvalue="Application.QuadraticEquation" />
-        <item itemvalue="Application.Ex14_1" />
+        <item itemvalue="Application.DaoMang" />
+        <item itemvalue="Application.ArrayIndexOutOfBoundsException" />
+        <item itemvalue="Application.UngDungChuyenDoiTienTe" />
+        <item itemvalue="Application.HienThiCacLoaiHinh" />
+        <item itemvalue="Application.HienThi20SoNguyenTo" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +173,12 @@
       <workItem from="1581997753973" duration="3087000" />
       <workItem from="1582030901762" duration="6956000" />
       <workItem from="1582074918343" duration="4697000" />
-      <workItem from="1582170550144" duration="460000" />
+      <workItem from="1582170550144" duration="2206000" />
+      <workItem from="1582212826159" duration="1557000" />
+      <workItem from="1582247898067" duration="11275000" />
+      <workItem from="1582450725595" duration="3800000" />
+      <workItem from="1582467425429" duration="2202000" />
+      <workItem from="1582508328584" duration="472000" />
     </task>
     <servers />
   </component>
@@ -205,29 +190,41 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="5" width="816" height="723" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1582038302849" />
-    <state x="484" y="256" width="398" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581907319493">
+    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser" timestamp="1582257851448">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="484" y="256" width="398" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1581907319493" />
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1582171047792">
+    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1582257851448" />
+    <state x="484" y="256" width="398" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582255303739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582171047792" />
-    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1582171047792">
+    <state x="484" y="256" width="398" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1582255303739" />
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1582469637755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582171047792" />
-    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1582171047792">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582469637755" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1582469637755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582171047792" />
-    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1582171047792">
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582469637755" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1582469637755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582171047792" />
-    <state x="390" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1582170570269">
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582469637755" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1582469637755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582170570269" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582469637755" />
+    <state x="456" y="79" key="RollbackChangesDialog" timestamp="1582248241257">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="456" y="79" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1582248241257" />
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1582508327619">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582508327619" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1582255385012">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582255385012" />
   </component>
 </project>
