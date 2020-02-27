@@ -2,30 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="007c43e8-b233-4724-97e3-ff79575328bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/Fan/Acount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B3_OOP/BaiTap/Fan/Fan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Triangle/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Triangle/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/nhap/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/BaiTap/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/BaiTap/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/BaiTap/Resizeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/BaiTap/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/AbstractAndInterfaceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Chicken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Edible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Tiger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/CircleComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/CircleComparatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/Comparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/BaiTap/AraySort/ComparableComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/BaiTap/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/BaiTap/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Module1/src/C1219H1_Dinh_Vu_Anh_Tuan" beforeDir="false" afterPath="$PROJECT_DIR$/../Module1/src/C1219H1_Dinh_Vu_Anh_Tuan" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Circle/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Circle/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Point/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B4_KeThua/BaiTap/Point/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/B5/AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/CircleComparatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/B5/AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/CircleComparatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/BaiTap/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/BaiTap/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/BaiTap/Resizeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/BaiTap/Resizeable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/BaiTap/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/BaiTap/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/AbstractAndInterfaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/AbstractAndInterfaceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Chicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Edible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Edible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Orange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/AnimalvsInterfaceEdible/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/CircleComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/CircleComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/CircleComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/CircleComparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/B5/AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/Comparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B5_AdvancedObjectOrientedDesign/ThucHanh/ComparatorHinhHoc/Comparable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -70,7 +68,7 @@
       <recent name="D:\Codegym\C1219H1\module2\B1_NgonNguJava" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CircleComparatorTest">
+  <component name="RunManager" selected="Application.ComparableComparator">
     <configuration name="AbstractAndInterfaceTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="B5.AdvancedObjectOrientedDesign.ThucHanh.AnimalvsInterfaceEdible.AbstractAndInterfaceTests" />
       <module name="module2" />
@@ -110,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="B3_OOP.BaiTap.Fan.Fan" />
+    <configuration name="ComparableComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B5.AdvancedObjectOrientedDesign.BaiTap.AraySort.ComparableComparator" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="B3_OOP.BaiTap.Fan.*" />
+          <option name="PATTERN" value="B5.AdvancedObjectOrientedDesign.BaiTap.AraySort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ComparableComparator" />
         <item itemvalue="Application.CircleComparatorTest" />
         <item itemvalue="Application.AbstractAndInterfaceTests" />
         <item itemvalue="Application.Child" />
         <item itemvalue="Application.Triangle" />
-        <item itemvalue="Application.Fan" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +174,7 @@
       <workItem from="1582467425429" duration="2202000" />
       <workItem from="1582508328584" duration="9648000" />
       <workItem from="1582604599608" duration="1689000" />
-      <workItem from="1582680161099" duration="7580000" />
+      <workItem from="1582680161099" duration="9865000" />
     </task>
     <servers />
   </component>
@@ -188,10 +186,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="5" width="816" height="723" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1582038302849" />
-    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser" timestamp="1582687255238">
+    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser" timestamp="1582689536701">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1582687255238" />
+    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1582689536701" />
     <state x="484" y="256" width="612" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582680192617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -200,22 +198,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1582680211709" />
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1582687588338">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1582692512095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582687588338" />
-    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1582687588337">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582692512095" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1582692512095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582687588337" />
-    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1582687588337">
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582692512095" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1582692512095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582687588337" />
-    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1582687588337">
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582692512095" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1582692512095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582687588337" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582692512095" />
     <state x="456" y="79" key="RollbackChangesDialog" timestamp="1582248241257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

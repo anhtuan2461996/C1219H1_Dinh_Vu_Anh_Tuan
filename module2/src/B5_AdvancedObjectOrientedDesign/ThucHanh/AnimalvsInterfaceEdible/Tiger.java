@@ -1,4 +1,4 @@
-package B5.AdvancedObjectOrientedDesign.ThucHanh.AnimalvsInterfaceEdible;
+package B5_AdvancedObjectOrientedDesign.ThucHanh.AnimalvsInterfaceEdible;
 
 public class Tiger extends Animal {
     @Override

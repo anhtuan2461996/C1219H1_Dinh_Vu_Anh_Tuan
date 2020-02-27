@@ -1,4 +1,4 @@
-package B5.AdvancedObjectOrientedDesign.ThucHanh.ComparatorHinhHoc;
+package B5_AdvancedObjectOrientedDesign.ThucHanh.ComparatorHinhHoc;
 
 import B4_KeThua.BaiTap.Circle.Circle;
 
@@ -19,7 +19,7 @@ public class CircleComparatorTest {
         }
         Comparable ciComparable = new CircleComparator();
         //Arrays.sort(crCircle,ciComparable);
-        Arrays.sort(crCircle, ciComparable);
+        Arrays.sort(crCircle);
 
         System.out.println("After-sorted:");
         for (int i=0;i<crCircle.length;i++){

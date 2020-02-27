@@ -1,4 +1,4 @@
-package B5.AdvancedObjectOrientedDesign.ThucHanh.ComparatorHinhHoc;
+package B5_AdvancedObjectOrientedDesign.ThucHanh.ComparatorHinhHoc;
 
 import B4_KeThua.BaiTap.Circle.Circle;
 
