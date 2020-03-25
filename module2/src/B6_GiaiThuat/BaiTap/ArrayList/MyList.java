@@ -24,9 +24,9 @@ public class MyList <E>{
     public int size(){
         return 0;
     }
-    public E clone(){
-
-    };
+//    public E clone(){
+//
+//    };
     public boolean contains(E o){
         return true;
     };
@@ -39,9 +39,9 @@ public class MyList <E>{
     public void ensureCapacity(int minCapacity){
 
     }
-    public E get(int i){
-
-    }
+//    public E get(int i){
+//
+//    }
     public void clear(){
 
     }
