@@ -27,7 +27,7 @@ create table kieu_thue(
 );
 create table loai_dich_vu(
 	id_loai_dich_vu int primary key,
-	ten_cua_dich_vu nvarchar(45)
+	ten_loai_dich_vu nvarchar(45)
 );
 create table dich_vu(
 	id_dich_vu int primary key,
@@ -195,20 +195,54 @@ VALUES
     
 -- 4.	Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. Kết quả hiển thị được sắp xếp tăng dần theo số lần đặt phòng của khách
 -- hàng. Chỉ đếm những khách hàng nào có Tên loại khách hàng là “Diamond”.
-	select hop_dong.id_khach_hang,ho_ten,id_loai_khach, count(hop_dong.id_khach_hang) as so_lan from hop_dong
+	select hop_dong.id_khach_hang,ho_ten,loai_khach.id_loai_khach, count(hop_dong.id_khach_hang) as so_lan from hop_dong
 	inner join khach_hang on hop_dong.id_khach_hang = khach_hang.id_khach_hang
     inner join loai_khach on khach_hang.id_loai_khach = loai_khach.id_loai_khach
- 
     where loai_khach.ten_loai_khach ='Diamond' group by hop_dong.id_khach_hang order by so_lan;
     
 -- 5.	Hiển thị IDKhachHang, HoTen, TenLoaiKhach, IDHopDong, TenDichVu, NgayLamHopDong, NgayKetThuc, TongTien (Với TongTien được tính theo công thức như sau
 -- : ChiPhiThue + SoLuong*Gia, với SoLuong và Giá là từ bảng DichVuDiKem) cho tất cả các Khách hàng đã từng đặt phỏng. (Những Khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
-    select khach_hang.id_khach_hang,ho_ten, ten_loai_khach, hop_dong.id_hop_dong, ten_dich_vu, ngay_lam_hop_dong,ngay_ket_thuc, sum(chi_phi_thue+so_luong*gia) as tongtien
+    select khach_hang.id_khach_hang, ho_ten, ten_loai_khach, hop_dong.id_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, sum(chi_phi_thue+so_luong*gia) as tongtien
     from khach_hang
-	inner join loai_khach on khach_hang.id_loai_khach = loai_khach.id_loai_khach
     left join hop_dong on khach_hang.id_khach_hang = hop_dong.id_khach_hang
-    left join hop_dong_chi_tiet on hop_dong.id_hop_dong_chi_tiec = hop_dong_chi_tiet.id_hop_dong_chi_tiet
+	inner join loai_khach on khach_hang.id_loai_khach = loai_khach.id_loai_khach
+    left join dich_vu on hop_dong.id_dich_vu = dich_vu.id_dich_vu
+    left join hop_dong_chi_tiet on hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
     left join dich_vu_di_kem on hop_dong_chi_tiet.id_dich_vu_di_kem = dich_vu_di_kem.id_dich_vu_di_kem
-    group by khach_hang.id_khach_hang
+	group by khach_hang.id_khach_hang;
+    
+-- 6.	Hiển thị IDDichVu, TenDichVu, DienTich, ChiPhiThue, TenLoaiDichVu của tất cả các loại Dịch vụ chưa từng được Khách hàng thực hiện 
+-- đặt từ quý 1 của năm 2019 (Quý 1 là tháng 1, 2, 3).
 	
+    select dich_vu.id_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu, max(ngay_lam_hop_dong) as ngay_dat_gan_nhat from dich_vu
+    inner join loai_dich_vu on dich_vu.id_loai_dich_vu = loai_dich_vu.id_loai_dich_vu
+    inner join hop_dong on dich_vu.id_dich_vu = hop_dong.id_dich_vu
+    group by id_dich_vu
+    having ngay_dat_gan_nhat < '2019-01-01';
+    
+-- 7.	Hiển thị thông tin IDDichVu, TenDichVu, DienTich, SoNguoiToiDa, ChiPhiThue, TenLoaiDichVu của tất cả các loại dịch vụ đã 
+-- từng được Khách hàng đặt phòng trong năm 2018 nhưng chưa từng được Khách hàng đặt phòng  trong năm 2019.
+	select dich_vu.id_dich_vu, dich_vu.ten_dich_vu, dich_vu.dien_tich, dich_vu.so_nguoi_toi_da, dich_vu.chi_phi_thue, loai_dich_vu.ten_loai_dich_vu ,year(ngay_lam_hop_dong), max(ngay_lam_hop_dong) from dich_vu
+    inner join loai_dich_vu on dich_vu.id_loai_dich_vu = loai_dich_vu.id_loai_dich_vu
+	inner join hop_dong on dich_vu.id_dich_vu = hop_dong.id_dich_vu
+    where year(ngay_lam_hop_dong) = '2018'
+    group by dich_vu.id_dich_vu
+    having max(ngay_lam_hop_dong) <> '2019';
+
+-- 8.	Hiển thị thông tin HoTenKhachHang có trong hệ thống, với yêu cầu HoThenKhachHang không trùng nhau.
+	select DISTINCT* from khach_hang;
+    
+    select ho_ten from khach_hang
+    group by ho_ten;
+    
+    select DISTINCTROW * from khach_hang;
+    
+-- 9.	Thực hiện thống kê doanh thu theo tháng, nghĩa là tương ứng với mỗi tháng trong năm 2019 thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng.
+	select month(ngay_lam_hop_dong),count(id_hop_dong) from hop_dong
+    where year(ngay_lam_hop_dong) =2019
+    group by month(ngay_lam_hop_dong);
+
+-- 10.	Hiển thị thông tin tương ứng với từng Hợp đồng thì đã sử dụng bao nhiêu Dịch vụ đi kèm. Kết quả hiển thị bao gồm IDHopDong, 
+-- NgayLamHopDong, NgayKetthuc, TienDatCoc, SoLuongDichVuDiKem (được tính dựa trên việc count các IDHopDongChiTiet).
+	select * from khach_hang;
 
