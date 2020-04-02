@@ -179,17 +179,15 @@ create table hop_dong_chi_tiet(
 -- (được tính dựa trên tổng Hợp đồng chi tiết), TienDatCoc của tất cả các dịch vụ đã từng được khách hàng đặt vào 3 tháng cuối năm 2019
 -- nhưng chưa từng được khách hàng đặt vào 6 tháng đầu năm 2019.
 
-	select hop_dong.id_hop_dong, nhan_vien.ho_ten as ten_nhan_vien ,khach_hang.ho_ten as ten_khach_hang, khach_hang.sdt as so_dien_thoai_khach_hang, dich_vu.ten_dich_vu,count(hop_dong_chi_tiet.id_dich_vu_di_kem) as so_luong_dich_vu_di_kem, sum(hop_dong.tien_dat_coc) as tong_tien_dat_coc,hop_dong.ngay_lam_hop_dong
-    from hop_dong
-    inner join nhan_vien on hop_dong.id_nhan_vien = nhan_vien.id_nhan_vien
-	inner join khach_hang on hop_dong.id_khach_hang = khach_hang.id_khach_hang
-    inner join dich_vu on hop_dong.id_dich_vu = dich_vu.id_dich_vu
-    inner join hop_dong_chi_tiet on hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
-    where exists 	(select hop_dong.id_hop_dong from hop_dong 
-				 where hop_dong.ngay_lam_hop_dong between '2019-10-01' and '2019-12-31')
-and not exists  (select hop_dong.id_hop_dong 
-				 where hop_dong.ngay_lam_hop_dong between '2019-06-01' and '2019-06-30')
-    group by hop_dong.id_hop_dong;
+		select hop_dong.id_hop_dong, nhan_vien.ho_ten as ten_nhan_vien ,khach_hang.ho_ten as ten_khach_hang, khach_hang.sdt as so_dien_thoai_khach_hang, dich_vu.ten_dich_vu,count(hop_dong_chi_tiet.id_dich_vu_di_kem) as so_luong_dich_vu_di_kem, sum(hop_dong.tien_dat_coc) as tong_tien_dat_coc,hop_dong.ngay_lam_hop_dong
+		from hop_dong
+		inner join nhan_vien on hop_dong.id_nhan_vien = nhan_vien.id_nhan_vien
+		inner join khach_hang on hop_dong.id_khach_hang = khach_hang.id_khach_hang
+		inner join dich_vu on hop_dong.id_dich_vu = dich_vu.id_dich_vu
+		inner join hop_dong_chi_tiet on hop_dong.id_hop_dong = hop_dong_chi_tiet.id_hop_dong
+		where year(ngay_lam_hop_dong ) = 2019 and ((month(ngay_lam_hop_dong) between 10 and 12) and not month(ngay_lam_hop_dong) between 1 and 6) 	
+		group by hop_dong.id_hop_dong;
+    
     
 -- 13.	Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng. (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng 
 -- nhiều như nhau).
@@ -269,10 +267,11 @@ and not exists  (select hop_dong.id_hop_dong
 			where year(hop_dong.ngay_lam_hop_dong) > 2016 and khach_hang.id_khach_hang = hop_dong.id_khach_hang);
 
 -- 19.	Cập nhật giá cho các Dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2019 lên gấp đôi.
-update dich_vu_di_kem 	inner join (select dich_vu_di_kem.ten_dich_vu_di_kem as ten_dich_vu_di_kem
-from hop_dong_chi_tiet inner join dich_vu_di_kem on dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem
-group by dich_vu_di_kem.id_dich_vu_di_kem
-having count(hop_dong_chi_tiet.id_dich_vu_di_kem) >4) as temp set dich_vu_di_kem.gia = dich_vu_di_kem.gia*2 where dich_vu_di_kem.ten_dich_vu_di_kem = temp.ten_dich_vu_di_kem;                            
+	update dich_vu_di_kem 	inner join (select dich_vu_di_kem.ten_dich_vu_di_kem as ten_dich_vu_di_kem
+	from hop_dong_chi_tiet inner join dich_vu_di_kem on dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem
+	group by dich_vu_di_kem.id_dich_vu_di_kem
+	having count(hop_dong_chi_tiet.id_dich_vu_di_kem) >4) as temp set dich_vu_di_kem.gia = dich_vu_di_kem.gia*2 where dich_vu_di_kem.ten_dich_vu_di_kem = temp.ten_dich_vu_di_kem;                            
+
 -- 20.	Hiển thị thông tin của tất cả các Nhân viên và Khách hàng có trong hệ thống, thông tin hiển thị bao gồm ID
 -- (IDNhanVien, IDKhachHang), HoTen, Email, SoDienThoai, NgaySinh, DiaChi.
 	select id_nhan_vien, ho_ten,email,sdt ,ngay_sinh,dia_chi from nhan_vien
