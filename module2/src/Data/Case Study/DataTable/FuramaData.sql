@@ -265,12 +265,20 @@ create table hop_dong_chi_tiet(
 	inner join hop_dong_chi_tiet on hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong
 	where not exists(select hop_dong.id_hop_dong 
 			where year(hop_dong.ngay_lam_hop_dong) > 2016 and khach_hang.id_khach_hang = hop_dong.id_khach_hang);
-
+            
 -- 19.	Cập nhật giá cho các Dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2019 lên gấp đôi.
-	update dich_vu_di_kem 	inner join (select dich_vu_di_kem.ten_dich_vu_di_kem as ten_dich_vu_di_kem
-	from hop_dong_chi_tiet inner join dich_vu_di_kem on dich_vu_di_kem.id_dich_vu_di_kem = hop_dong_chi_tiet.id_dich_vu_di_kem
-	group by dich_vu_di_kem.id_dich_vu_di_kem
-	having count(hop_dong_chi_tiet.id_dich_vu_di_kem) >4) as temp set dich_vu_di_kem.gia = dich_vu_di_kem.gia*2 where dich_vu_di_kem.ten_dich_vu_di_kem = temp.ten_dich_vu_di_kem;                            
+	ALTER TABLE hop_dong_chi_tiet
+	DROP FOREIGN KEY fk_hopdong_hopdongchitiet;
+	ALTER TABLE hop_dong_chi_tiet ADD CONSTRAINT fk_hopdong_hopdongchitiet FOREIGN KEY(id_hop_dong)
+	REFERENCES hop_dong(id_hop_dong) ON DELETE CASCADE;
+	ALTER TABLE hop_dong
+	DROP FOREIGN KEY fk_khachhang_hopdong;
+	ALTER TABLE hop_dong ADD CONSTRAINT fk_khachhang_hopdong FOREIGN KEY(id_khach_hang)
+	REFERENCES khach_hang(id_khach_hang) ON DELETE CASCADE;
+	delete khach_hang from khach_hang
+	left join hop_dong on khach_hang.id_khach_hang = hop_dong.id_khach_hang
+	left join hop_dong_chi_tiet on hop_dong_chi_tiet.id_hop_dong = hop_dong.id_hop_dong
+	where year(ngay_lam_hop_dong) = 2016;                     
 
 -- 20.	Hiển thị thông tin của tất cả các Nhân viên và Khách hàng có trong hệ thống, thông tin hiển thị bao gồm ID
 -- (IDNhanVien, IDKhachHang), HoTen, Email, SoDienThoai, NgaySinh, DiaChi.
